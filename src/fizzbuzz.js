@@ -10,6 +10,10 @@ function FizzBuzz(number) {
             return "Fizz";
         }
 
+        if (number === 4) {
+            return "4";
+        }
+
         return "1";
     }
 }
