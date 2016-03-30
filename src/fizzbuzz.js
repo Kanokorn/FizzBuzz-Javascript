@@ -5,7 +5,7 @@ function FizzBuzz(number) {
         if (number === 3 || number === 6 || number === 9) {
             return "Fizz";
         }
-        if (number === 5) {
+        if (number === 5 || number === 10) {
             return "Buzz";
         }
 

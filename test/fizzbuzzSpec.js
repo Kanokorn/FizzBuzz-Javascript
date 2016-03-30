@@ -33,4 +33,9 @@ describe("FizzBuzz", function(){
         var fizzbuzz = new FizzBuzz(9);
         expect(fizzbuzz.say()).toEqual("Fizz");
     });
+
+    it("should say Buzz when put 10", function(){
+        var fizzbuzz = new FizzBuzz(10);
+        expect(fizzbuzz.say()).toEqual("Buzz");
+    });
 });
