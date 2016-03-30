@@ -2,7 +2,7 @@ function FizzBuzz(number) {
     this.say = say;
 
     function say() {
-        if (number === 15 || number === 30) {
+        if (number % 3 === 0 && number % 5 === 0) {
             return "FizzBuzz";
         }
 
