@@ -48,4 +48,9 @@ describe("FizzBuzz", function(){
         var fizzbuzz = new FizzBuzz(15);
         expect(fizzbuzz.say()).toEqual("FizzBuzz");
     });
+
+    it("should say Buzz when put 20", function(){
+        var fizzbuzz = new FizzBuzz(20);
+        expect(fizzbuzz.say()).toEqual("Buzz");
+    });
 });
