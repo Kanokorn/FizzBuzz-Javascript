@@ -9,24 +9,11 @@ describe("Test FizzBuzz", function(){
     });
 
     describe("Say Fizz", function() {
-        it("when put 3", function(){
-            var fizzbuzz = new FizzBuzz(3);
-            expect(fizzbuzz.say()).toEqual("Fizz");
-        });
-
-        it("when put 6", function(){
-            var fizzbuzz = new FizzBuzz(6);
-            expect(fizzbuzz.say()).toEqual("Fizz");
-        });
-
-        it("when put 9", function(){
-            var fizzbuzz = new FizzBuzz(9);
-            expect(fizzbuzz.say()).toEqual("Fizz");
-        });
-
-        it("when put 12", function(){
-            var fizzbuzz = new FizzBuzz(12);
-            expect(fizzbuzz.say()).toEqual("Fizz");
+        [3, 6, 9, 12].forEach(function(number){
+            it("when put " + number, function(){
+                var fizzbuzz = new FizzBuzz(number);
+                expect(fizzbuzz.say()).toEqual("Fizz");
+            });
         });
     });
 
