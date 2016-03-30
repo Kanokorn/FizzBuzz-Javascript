@@ -1,18 +1,10 @@
 describe("Test FizzBuzz", function(){
     describe("Say Number", function() {
-        it("should say 1 when put 1", function(){
-            var fizzbuzz = new FizzBuzz(1);
-            expect(fizzbuzz.say()).toEqual("1");
-        });
-
-        it("should say 2 when put 2", function(){
-            var fizzbuzz = new FizzBuzz(2);
-            expect(fizzbuzz.say()).toEqual("2");
-        });
-
-        it("should say 4 when put 4", function(){
-            var fizzbuzz = new FizzBuzz(4);
-            expect(fizzbuzz.say()).toEqual("4");
+        [1, 2, 4].forEach(function (number) {
+            it("should say number correct", function(){
+                var fizzbuzz = new FizzBuzz(number);
+                expect(fizzbuzz.say()).toEqual(number.toString());
+            });
         });
     });
 
