@@ -8,16 +8,16 @@
 
 2.Clone this respository
 ```
-  git clone https://github.com/Kanokorn/FizzBuzzJS.git
-  cd FizzBuzzJS
+  $ git clone https://github.com/Kanokorn/FizzBuzzJS.git
+  $ cd FizzBuzzJS
 ```
 
 3. Install
 ``` 
-  npm install 
+  $ npm install 
 ```
 4. Run Test
 
 ```
-  karma start
+  $ karma start
 ```
