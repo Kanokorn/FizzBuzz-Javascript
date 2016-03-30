@@ -18,36 +18,20 @@ describe("Test FizzBuzz", function(){
     });
 
     describe("Say Buzz", function() {
-        it("when put 5", function(){
-            var fizzbuzz = new FizzBuzz(5);
-            expect(fizzbuzz.say()).toEqual("Buzz");
-        });
-
-        it("when put 10", function(){
-            var fizzbuzz = new FizzBuzz(10);
-            expect(fizzbuzz.say()).toEqual("Buzz");
-        });
-
-        it("when put 20", function(){
-            var fizzbuzz = new FizzBuzz(20);
-            expect(fizzbuzz.say()).toEqual("Buzz");
+        [5, 10, 20].forEach(function(number) {
+            it("when put " + number, function(){
+                var fizzbuzz = new FizzBuzz(number);
+                expect(fizzbuzz.say()).toEqual("Buzz");
+            });
         });
     });
 
     describe("Say FizzBuzz", function() {
-        it("when put 15", function(){
-            var fizzbuzz = new FizzBuzz(15);
-            expect(fizzbuzz.say()).toEqual("FizzBuzz");
-        });
-
-        it("when put 30", function(){
-            var fizzbuzz = new FizzBuzz(30);
-            expect(fizzbuzz.say()).toEqual("FizzBuzz");
-        });
-
-        it("when put 45", function(){
-            var fizzbuzz = new FizzBuzz(45);
-            expect(fizzbuzz.say()).toEqual("FizzBuzz");
+        [15, 30, 45].forEach(function(number) {
+            it("when put " + number, function(){
+                var fizzbuzz = new FizzBuzz(number);
+                expect(fizzbuzz.say()).toEqual("FizzBuzz");
+            });
         });
     });
 });
