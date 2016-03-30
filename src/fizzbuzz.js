@@ -6,7 +6,7 @@ function FizzBuzz(number) {
             return "FizzBuzz";
         }
 
-        if (number % 3 === 0) {
+        if (isMultiplesOfThree()) {
             return "Fizz";
         }
 
@@ -15,5 +15,9 @@ function FizzBuzz(number) {
         }
 
         return number.toString();
+    }
+
+    function isMultiplesOfThree() {
+        return number % 3 === 0;
     }
 }
