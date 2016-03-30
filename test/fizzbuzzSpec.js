@@ -8,4 +8,9 @@ describe("FizzBuzz", function(){
         var fizzbuzz = new FizzBuzz(2);
         expect(fizzbuzz.say()).toEqual("2");
     });
+
+    it("should say Fizz when put 3", function(){
+        var fizzbuzz = new FizzBuzz(3);
+        expect(fizzbuzz.say()).toEqual("Fizz");
+    });
 });
