@@ -1,4 +1,4 @@
-##FizzBuzz
+#FizzBuzz
 Fizz buzz is a group word game for children to teach them about division. 
 Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", 
 and any number divisible by five with the word "buzz".
@@ -10,7 +10,7 @@ output:
  >31, 32, Fizz, 34, Buzz, Fizz, ...
 
 
-#Let's Code!
+##Let's Code!
 1.Make sure you have installed the dependencies
   * `git`
   * `node`
