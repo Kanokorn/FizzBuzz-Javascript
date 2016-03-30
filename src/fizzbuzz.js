@@ -10,7 +10,7 @@ function FizzBuzz(number) {
             return "Fizz";
         }
 
-        if (number % 5 === 0) {
+        if (isMultiplesOfFive()) {
             return "Buzz";
         }
 
@@ -19,5 +19,9 @@ function FizzBuzz(number) {
 
     function isMultiplesOfThree() {
         return number % 3 === 0;
+    }
+
+    function isMultiplesOfFive() {
+        return number % 5 === 0;
     }
 }
